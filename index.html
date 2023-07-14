@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissors game</title>
+    <style>
+    .welcome-game{
+        display:block;
+        background-color: blue;
+        font-size: 25px;
+        font-weight: bolder;
+        font-family: arial;
+        border: none;
+        margin-bottom: 50px;
+      }
+     .rock-game {
+      background-color: red;
+      border-radius: 10px;
+      border:solid;
+      border-color: black;
+     }
+      .paper-game {
+        background-color: yellow;
+        border-radius: 10px;
+        border: solid;
+        border-color: black;
+
+      }
+    .scissors-game {
+        background-color:green;
+        border-radius: 10px;
+        border: solid;
+        border-color: black;
+      }
+
+    </style>
+  </head>
+  <body>
+<button class="welcome-game"> 
+ welcome to The Rock Paper and Scissors Game
+</button>
+
+<button class="rock-game" onclick="
+ const randomNumber = Math.random();
+let computerMove = ''; 
+if (randomNumber >= 0 &&  randomNumber <  1/3 ) {
+computerMove = 'Rock';
+}
+else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+  computerMove = 'Paper';
+}
+else if (randomNumber >= 2/3 && randomNumber < 1) {
+  computerMove = 'Scissors';
+}
+let result = '';
+if (computerMove === 'Rock') {
+  result = 'Tie.';
+}
+else if (computerMove === 'Paper') {   
+  result = 'you lose.';
+}
+else if (computerMove === 'Scissors') {
+  result = 'you win.';
+}
+ alert (`you picked Rock.the computer picked ${computerMove}.${result}`);
+
+"> Rock</button>
+<button class="paper-game"     .
+
+onclick="
+ const randomNumber = Math.random();
+let computerMove = ''; 
+if (randomNumber >= 0 &&  randomNumber <  1/3 ) {
+computerMove = 'Rock';
+}
+else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+  computerMove = 'Paper';
+}
+else if (randomNumber >= 2/3 && randomNumber < 1) {
+  computerMove = 'Scissors';
+}
+let result = '';
+if (computerMove === 'Rock') {
+  result = 'you win.';
+}
+else if (computerMove === 'Paper') {   
+  result = 'Tie.';
+}
+else if (computerMove === 'Scissors') {
+  result = 'you lose.';
+}
+ alert (`you picked Paper.the computer picked ${computerMove}.${result}`);"
+
+
+> Paper</button>
+<button class="scissors-game"   
+onclick="
+ const randomNumber = Math.random();
+let computerMove = ''; 
+if (randomNumber >= 0 &&  randomNumber <  1/3 ) {
+computerMove = 'Rock';
+}
+else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+  computerMove = 'Paper';
+}
+else if (randomNumber >= 2/3 && randomNumber < 1) {
+  computerMove = 'Scissors';
+}
+let result = '';
+if (computerMove === 'Rock') {
+  result = 'you lose.';
+}
+else if (computerMove === 'Paper') {   
+  result = 'you win.';
+}
+else if (computerMove === 'Scissors') {
+  result = 'Tie.';
+}
+ alert (`you picked Scissors.the computer picked ${computerMove}.${result}`);"
+
+
+
+
+> Scissors</button>
+<script>
+    
+</script>
+    
+</body>
+</html>
